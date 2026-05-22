@@ -38,9 +38,6 @@ for index, row in df.iterrows():
 
     study_uid = str(row["study_uid"])
 
-    # -----------------------------------
-    # Create patient folder
-    # -----------------------------------
 
     patient_folder = os.path.join(
         OUTPUT_FOLDER,
@@ -95,10 +92,6 @@ for index, row in df.iterrows():
 
         print("Image Error:", patient_id)
         print(e)
-
-    # -----------------------------------
-    # Save metadata
-    # -----------------------------------
 
     metadata_path = os.path.join(
         patient_folder,
