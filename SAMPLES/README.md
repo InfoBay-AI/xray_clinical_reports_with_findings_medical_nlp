@@ -49,9 +49,6 @@ for index, row in df.iterrows():
         exist_ok=True
     )
 
-    # -----------------------------------
-    # Extract image
-    # -----------------------------------
 
     image = row["image"]
 
